@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"org\/udea\/parabank\/login-authentication[1:12]","start":1750981653712,"end":1750981654081,"title":"org\/udea\/parabank\/login-authentication[1:12] 18:47:33.712-18:47:34.081 Login exitoso con credenciales válidas retorna token JWT"},{"id":2,"group":1,"content":"org\/udea\/parabank\/login-authentication[2:29]","start":1750981654088,"end":1750981655036,"title":"org\/udea\/parabank\/login-authentication[2:29] 18:47:34.088-18:47:35.036 Token debe ser reutilizable para obtener contactos"},{"id":3,"group":1,"content":"org\/udea\/parabank\/login-authentication[3:50]","start":1750981655042,"end":1750981655346,"title":"org\/udea\/parabank\/login-authentication[3:50] 18:47:35.042-18:47:35.346 Login con email inválido retorna error","className":"failed"},{"id":4,"group":1,"content":"org\/udea\/parabank\/login-authentication[4:63]","start":1750981655352,"end":1750981655632,"title":"org\/udea\/parabank\/login-authentication[4:63] 18:47:35.352-18:47:35.632 Login con password inválido retorna error","className":"failed"},{"id":5,"group":1,"content":"org\/udea\/parabank\/login-authentication[5:76]","start":1750981655638,"end":1750981655917,"title":"org\/udea\/parabank\/login-authentication[5:76] 18:47:35.638-18:47:35.917 Login con email malformado retorna error de validación","className":"failed"},{"id":6,"group":1,"content":"org\/udea\/parabank\/login-authentication[6:89]","start":1750981655922,"end":1750981656190,"title":"org\/udea\/parabank\/login-authentication[6:89] 18:47:35.922-18:47:36.190 Login sin email es requerido","className":"failed"},{"id":7,"group":1,"content":"org\/udea\/parabank\/login-authentication[7:100]","start":1750981656196,"end":1750981656481,"title":"org\/udea\/parabank\/login-authentication[7:100] 18:47:36.196-18:47:36.481 Login sin password es requerido","className":"failed"},{"id":8,"group":1,"content":"org\/udea\/parabank\/login-authentication[8:111]","start":1750981656487,"end":1750981656757,"title":"org\/udea\/parabank\/login-authentication[8:111] 18:47:36.487-18:47:36.757 Validar formato de email correcto","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

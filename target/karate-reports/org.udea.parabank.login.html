@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("5d6a837f-2cc6-4c1a-98bd-1d8e656eb1cd",{name:"Andres T"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>org.udea.parabank.login</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div>prod</div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-06-26 06:46:43 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Customer Login</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">org/udea/parabank/login.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Login to Parabank</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">parabank_login</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Customer Login</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>256</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;john&#39; //userName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;demo&#39; //password</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">255</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">18:46:42.947 request:
+1 &gt; GET https://thinking-tester-contact-list.herokuapp.com/login/john/demo
+1 &gt; Accept: application/json
+1 &gt; Host: thinking-tester-contact-list.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:46:43.200 response time in milliseconds: 253
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750981602&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=GRWgQBCZpApDiqdWr2npZi9UwPD%2B%2FeAv4Fy4p9oTMb4%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750981602&amp;sid=af571f24-03ee-46d1-9f90-ab9030c2c74c&amp;s=GRWgQBCZpApDiqdWr2npZi9UwPD%2B%2FeAv4Fy4p9oTMb4%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Content-Length: 564
+1 &lt; Etag: W/&quot;234-hNjllUMlYDDnOdBMQyypOXVcbE4&quot;
+1 &lt; Date: Thu, 26 Jun 2025 23:46:42 GMT
+1 &lt; Via: 1.1 vegur
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;404&lt;/title&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;/img/thinkingTesterIcon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Page Not Found&lt;/h1&gt;
+            &lt;button id=&#39;logout&#39; class=&#39;logout&#39; onclick=&quot;location.href=&#39;/logout&#39;&quot;&gt;Logout&lt;/button&gt;
+        &lt;/header&gt;
+        
+        
+    &lt;/div&gt;
+        &lt;footer&gt;
+            &lt;p&gt;Created by Kristin Jackvony, Copyright 2021 &lt;/p&gt;
+            &lt;img src = &quot;/img/thinkingTesterLogo.png&quot;&gt;
+        &lt;/footer&gt;
+        
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.14">{
+   &quot;id&quot;: &#39;#number&#39;,
+   &quot;firstName&quot;: &#39;#string&#39;,
+   &quot;lastName&quot;: &#39;#string&#39;,
+   &quot;address&quot;: {
+        &quot;street&quot;: &#39;#string&#39;,
+        &quot;city&quot;: &#39;#string&#39;,
+        &quot;state&quot;: &#39;#string&#39;,
+        &quot;zipCode&quot;: &#39;#string&#39;
+    },
+   &quot;phoneNumber&quot;: &#39;#string&#39;,
+   &quot;ssn&quot;: &#39;#string&#39;
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="0.14">18:46:43.201 classpath:org/udea/parabank/login.feature:14
+And match response ==
+&quot;&quot;&quot;
+{
+   &quot;id&quot;: &#39;#number&#39;,
+   &quot;firstName&quot;: &#39;#string&#39;,
+   &quot;lastName&quot;: &#39;#string&#39;,
+   &quot;address&quot;: {
+        &quot;street&quot;: &#39;#string&#39;,
+        &quot;city&quot;: &#39;#string&#39;,
+        &quot;state&quot;: &#39;#string&#39;,
+        &quot;zipCode&quot;: &#39;#string&#39;
+    },
+   &quot;phoneNumber&quot;: &#39;#string&#39;,
+   &quot;ssn&quot;: &#39;#string&#39;
+}
+&quot;&quot;&quot;
+match failed: EQUALS
+  $ | data types don&#39;t match (STRING:MAP)
+  &#39;&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;404&lt;/title&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;/img/thinkingTesterIcon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/styles.css&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Page Not Found&lt;/h1&gt;
+            &lt;button id=&#39;logout&#39; class=&#39;logout&#39; onclick=&quot;location.href=&#39;/logout&#39;&quot;&gt;Logout&lt;/button&gt;
+        &lt;/header&gt;
+        
+        
+    &lt;/div&gt;
+        &lt;footer&gt;
+            &lt;p&gt;Created by Kristin Jackvony, Copyright 2021 &lt;/p&gt;
+            &lt;img src = &quot;/img/thinkingTesterLogo.png&quot;&gt;
+        &lt;/footer&gt;
+        
+&lt;/body&gt;
+
+&lt;/html&gt;&#39;
+  {&quot;id&quot;:&quot;#number&quot;,&quot;firstName&quot;:&quot;#string&quot;,&quot;lastName&quot;:&quot;#string&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;#string&quot;,&quot;city&quot;:&quot;#string&quot;,&quot;state&quot;:&quot;#string&quot;,&quot;zipCode&quot;:&quot;#string&quot;},&quot;phoneNumber&quot;:&quot;#string&quot;,&quot;ssn&quot;:&quot;#string&quot;}
+
+classpath:org/udea/parabank/login.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
